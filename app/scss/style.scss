@@ -1,5 +1,4 @@
 @import "vars";
-@import "fonts";
 @import "libs";
 @import "global";
 
@@ -104,13 +103,15 @@
         padding: 8px 20px;
         font-size: 16px;
         line-height: 21px;
-        background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
+        background-color: #5a5a5a;
+        /* background-image: linear-gradient(0deg, #5a5a5a 0%, #797979 100%); */
         border-radius: 4px;
         color: $white;
         border: none;
         cursor: pointer;
+        transition: all 0.3s ease-in-out;
         &:hover {
-            background: $green;
+            background-color: $green;
         }
     }
     &__arrow {
