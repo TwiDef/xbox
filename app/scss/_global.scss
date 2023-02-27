@@ -58,3 +58,7 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+
+.container-right {
+    padding-left: calc((100% - 1370px) / 2 + 15px);
+}
