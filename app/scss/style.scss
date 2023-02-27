@@ -287,11 +287,42 @@
     }
 }
 
-.slider {
-}
-
-.slider {
-}
-
-.slider-cards__btn {
+.design {
+    background-image: url("../images/gamepads.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 140px 0 170px;
+    &__info {
+        max-width: 500px;
+        width: 100%;
+    }
+    &__title {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 400;
+    }
+    &__text {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        button {
+            font-size: 16px;
+            line-height: 21px;
+            padding: 20px 36px;
+            color: $white;
+            border: none;
+            background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background: linear-gradient(180deg, #54c328 0%, #67f151 100%);
+            }
+        }
+    }
 }
