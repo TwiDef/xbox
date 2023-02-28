@@ -16,4 +16,9 @@ $(function() {
         autoplay: true,
         autoplaySpeed: 1500
     });
+
+    $('.menu-btn').on('click', () => {
+        $('.menu-mobile').toggleClass('active');
+        $('.menu-btn').toggleClass('active');
+    });
 });
