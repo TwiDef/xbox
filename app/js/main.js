@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     $('.slider').slick({
         arrows: true,
         dots: false,
@@ -13,8 +13,46 @@ $(function() {
         infinite: true,
         slidesToScroll: 1,
         arrows: false,
-        autoplay: true,
-        autoplaySpeed: 1500
+        autoplay: false,
+        autoplaySpeed: 1500,
+        responsive: [
+            {
+                breakpoint: 840,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false,
+                    centerMode: true,
+                    centerPadding: '230px',
+                },
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: true,
+                    centerMode: true,
+                    centerPadding: '230px',
+                },
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false,
+                    centerMode: true,
+                    centerPadding: '160px',
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: true,
+                    centerMode: true,
+                    centerPadding: '0px',
+                },
+            }
+        ]
     });
 
     $('.menu-btn').on('click', () => {

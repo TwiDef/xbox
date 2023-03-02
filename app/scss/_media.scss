@@ -10,10 +10,99 @@
 }
 
 @media (max-width: 840px) {
+    .header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 101;
+    }
     .header__wrapper {
         display: none;
     }
     .menu-btn {
         display: block;
     }
+}
+
+@media (max-width: 640px) {
+    .slider__item-title {
+        font-size: 38px;
+        span {
+            font-size: 24px;
+        }
+    }
+    .slider__item-btn {
+        font-size: 14px;
+        padding: 6px 16px;
+    }
+    .cards {
+        padding: 26px 0;
+    }
+    .cards__title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .cards__subtitle {
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 26px;
+    }
+    .cards__item {
+        width: 230px;
+        &-img {
+            margin-bottom: 12px;
+        }
+        &-title {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &-info {
+            margin: 6px 0px 24px 22px;
+            margin-left: 22px;
+            margin-right: auto;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &-btn {
+            max-width: 180px;
+            height: 54px;
+            font-size: 14px;
+        }
+    }
+    .exclusive-info {
+        padding: 30px 0 30px;
+        &__title {
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+    }
+    .slider-cards {
+        &__item {
+            width: 100%;
+            min-height: 360px;
+        }
+        &__title {
+            font-size: 16px;
+            line-height: 10px;
+        }
+        &__info {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__btn {
+            font-size: 15px;
+            max-width: 180px;
+            height: 46px;
+        }
+    }
+    .exclusive-info__btn {
+        margin-top: 30px;
+        font-size: 15px;
+        max-width: 180px;
+        height: 46px;
+        padding: 15px 47px;
+    }
+}
+
+@media (max-width: 600px) {
 }
